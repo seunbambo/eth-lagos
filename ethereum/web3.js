@@ -1,7 +1,6 @@
 import Web3 from "web3";
 
 let web3;
-const API_ID = process.env.INFURA_API_ID;
 
 if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // We are in the browser and metamask is running.
@@ -9,7 +8,7 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
 } else {
   // We are on the server *OR* the user is not running metamask
   const provider = new Web3.providers.HttpProvider(
-    `https://rinkeby.infura.io/v3/${API_ID}`
+    "https://rinkeby.infura.io/v3/b5e52bfb1c924a7abd1c7e8c320610b8"
   );
   web3 = new Web3(provider);
 }
