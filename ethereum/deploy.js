@@ -2,6 +2,7 @@ const HDWalletProvider = require("truffle-hdwallet-provider");
 const Web3 = require("web3");
 const compiledFactory = require("./build/CampaignFactory.json");
 
+const REACT_APP_PROJECT_ID = process.env.REACT_APP_PROJECT_ID;
 const provider = new HDWalletProvider(
   "arm behave legal nurse pond subject empower oyster dust usual foot bar",
   `https://rinkeby.infura.io/v3/${REACT_APP_PROJECT_ID}`

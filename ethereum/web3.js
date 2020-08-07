@@ -1,7 +1,7 @@
 import Web3 from "web3";
 
 let web3;
-
+const REACT_APP_PROJECT_ID = process.env.REACT_APP_PROJECT_ID;
 if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
   // We are in the browser and metamask is running.
   web3 = new Web3(window.web3.currentProvider);
