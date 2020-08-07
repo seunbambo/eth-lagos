@@ -4,7 +4,7 @@ const compiledFactory = require("./build/CampaignFactory.json");
 
 const provider = new HDWalletProvider(
   "arm behave legal nurse pond subject empower oyster dust usual foot bar",
-  `https://rinkeby.infura.io/v3/REACT_APP_PROJECT_ID`
+  `https://rinkeby.infura.io/v3/${REACT_APP_PROJECT_ID}`
 );
 const web3 = new Web3(provider);
 
