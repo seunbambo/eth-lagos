@@ -5,6 +5,7 @@
   "scripts": {
     "test": "mocha",
     "dev": "node server.js",
+    "now-start": "serve --single ./build",
     "build": "next build"
   },
   "license": "MIT",
@@ -18,6 +19,7 @@
     "react-dom": "^16.13.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^1.1.1",
+    "serve": "^11.3.2",
     "solc": "^0.4",
     "truffle-hdwallet-provider": "^1.0.17",
     "web3": "^1.2.11"
